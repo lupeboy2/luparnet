@@ -34,12 +34,17 @@ print(myFirstNet.predict(np.array([[1]]),string=True))
 ```
 
 ## Methods
-  The network takes only two arguments in the constructor, the first being
-the desired number of layers and the second being an array of the data dimensions.
-The train function takes three arguments with an option for overload. The function
-takes first the number of epochs to train for, the second is the input data, the
-third is the output data. The final argument is an integer which allows for debugging
-and user training.
+```
+ln.net(layer,ds)
+```
+Constructs a neural network.
+layer is equal to the amount of layers in the network
+ds is an array and initializes the dimensions of the network.
+```
+yourNet.train(run,indata,outdata,error=false)
+```
+
+
 
 
 
