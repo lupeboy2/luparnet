@@ -11,7 +11,7 @@ and enter the following into the shell:
 pip install luparnet
 ```
 
-### Training your first network.
+## Training your first network.
 
 ```python
 import luparnet as ln
