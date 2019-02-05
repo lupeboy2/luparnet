@@ -23,8 +23,13 @@ x = np.array([[0],[1]])
 #output data
 y = np.array([[1],[0]])
 
+#build the network
 myFirstNet=ln.net(2,[1,2,1])
+
+#train the network and print the final loss
 print("Final Loss: %.8f"%(np.mean(np.abs(myFirstNet.train(30000,x,y,error=5000)))))
+
+#predict for the value one
 print(myFirstNet.predict(np.array([[1]]),string=True))
 ```
 
