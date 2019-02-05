@@ -1,11 +1,11 @@
-#Luparnet#
+#Luparnet
     **Luparnet** is a barebones machine learning that creates a simple class "net". This
 network can then be trained.
 
 
 
 
-##Methods##
+##Methods
 	The network takes only two arguments in the constructor, the first being
 the desired number of layers and the second being an array of the data dimensions.
 The train function takes three arguments with an option for overload. The function
