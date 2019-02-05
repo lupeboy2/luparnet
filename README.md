@@ -1,5 +1,5 @@
 # Luparnet
-  *Luparnet* is a barebones machine learning module that creates a simple class "net" 
+  *Luparnet* is a bare bones machine learning module that creates a simple class "net" 
 This new object is a neural network that can be trained on data. The purpose of this 
 system is to avoid having to use more complicated high level and complicated libraries
 and to serve as an education tool.
@@ -46,8 +46,20 @@ yourNet.train(run,indata,outdata,error=False)
 ```
 Trains the network for *run* times.
 *indata* and *outdata* are the input data and output data arrays of type np.array()
-*error* by defualt is False but takes an integer argument that prints the average 
-loss, time elapsed and epoch of the training data.
+*error* by default is False but takes an integer argument that prints the average 
+loss, time elapsed and epoch of the training data at steps that are multiples of
+*error*
+
+```
+yourNet.predict(data)
+```
+Makes a prediction for *data* of type np.array(). Data must be an np.array().
+
+```
+np.fit(csv)
+```
+Method takes a string, *csv* as input, must be a file name of a csv. The format
+should be a single set of input data points seperated by commas on each line. 
 
 
 
