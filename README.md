@@ -38,12 +38,16 @@ print(myFirstNet.predict(np.array([[1]]),string=True))
 ln.net(layer,ds)
 ```
 Constructs a neural network.
-layer is equal to the amount of layers in the network
-ds is an array and initializes the dimensions of the network.
-```
-yourNet.train(run,indata,outdata,error=false)
-```
+*layer* is equal to the amount of layers in the network
+*ds* is an array and initializes the dimensions of the network.
 
+```
+yourNet.train(run,indata,outdata,error=False)
+```
+Trains the network for *run* times.
+*indata* and *outdata* are the input data and output data arrays of type np.array()
+*error* by defualt is False but takes an integer argument that prints the average 
+loss, time elapsed and epoch of the training data.
 
 
 
