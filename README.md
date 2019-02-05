@@ -60,10 +60,5 @@ np.fit(csv)
 ```
 Method takes a string, *csv* as input, must be a file name of a csv. The format
 should be a single set of input data points seperated by commas on each line. 
-
-
-
-
-
-
+Returns a np.array() that can be used as inputs for the other methods.
 
