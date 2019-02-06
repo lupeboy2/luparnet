@@ -1,5 +1,5 @@
 # Luparnet
-  *Luparnet* is a bare bones machine learning module that creates a simple class "net" 
+  *Luparnaet* is a bare bones machine learning module that creates a simple class "net" 
 This new object is a neural network that can be trained on data. The purpose of this 
 system is to avoid having to use more complicated high level and complicated libraries
 and to serve as an education tool.
@@ -70,5 +70,32 @@ It is **extremely important** to find the right dimensions of your array and
 understand exactly what that means to the network.
 
 Take the example in [Training Your Network](#training-your-first-network)
+
+```python
+#input data
+x = np.array([[0],[1]])
+
+#output data
+y = np.array([[1],[0]])
+
+#build the network
+myFirstNet=ln.net(2,[1,2,1])
+```
+In this example the input data has dimensions of 1,2 which then become the
+first two numbers of the *ds* array. The last digit of the array comes from 
+the number of columns of the output array. 
+
+For a final example we can take the final example:
+```python
+#input data
+x = np.array([[1,0,1,1],[1,0,0,0],[0,0,0,0],[0,1,0,1]])
+
+#output data
+y = np.array([[1,1],[1,0],[1,0],[1,1]])
+```
+The output dimensions are therefore 
+```[4,4,2]```
+
+
 
 
