@@ -34,14 +34,14 @@ print(myFirstNet.predict(np.array([[1]]),string=True))
 ```
 
 ## Methods
-```
+```python
 ln.net(layer,ds)
 ```
 Constructs a neural network.
 *layer* is equal to the amount of layers in the network
 *ds* is an array and initializes the dimensions of the network.
 
-```
+```python
 yourNet.train(run,indata,outdata,error=False)
 ```
 Trains the network for *run* times.
@@ -50,15 +50,20 @@ Trains the network for *run* times.
 loss, time elapsed and epoch of the training data at steps that are multiples of
 *error*
 
-```
+```python
 yourNet.predict(data)
 ```
 Makes a prediction for *data* of type np.array(). Data must be an np.array().
 
-```
-np.fit(csv)
+```python
+ln.fit(csv)
 ```
 Method takes a string, *csv* as input, must be a file name of a csv. The format
 should be a single set of input data points seperated by commas on each line. 
-Returns a np.array() that can be used as inputs for the other methods.
+Returns an np.array() that can be used as inputs for the other methods.
+
+
+
+
+
 
