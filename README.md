@@ -69,6 +69,6 @@ Returns an np.array() that can be used as inputs for the other methods.
 It is **extremely important** to find the right dimensions of your array and 
 understand exactly what that means to the network.
 
-Take the example in t
+Take the example in [Training Your Network](#training-your-first-network)
 
 
