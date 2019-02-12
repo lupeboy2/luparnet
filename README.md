@@ -96,6 +96,13 @@ y = np.array([[1,1],[1,0],[1,0],[1,1]])
 The output dimensions are therefore 
 ```[4,4,2]```
 
+## Activation Functions
+
+| Function      | String        | Range |
+|:-------------:|:-------------:|:-----:|
+| Sigmoid       | "sigmoid"     |  (0,1) |
+| Arc Tangent   | "arctan"      |  (−π/2,π/2) |
+| SoftPlus      | "softplus"    |  (0,∞) |
 
 
 
