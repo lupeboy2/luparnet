@@ -32,7 +32,8 @@ print("Final Loss: %.8f"%(np.mean(np.abs(myFirstNet.train(30000,x,y,error=5000))
 #predict for the value one
 print(myFirstNet.predict(np.array([[1]]),string=True))
 ```
-
+This code is all you need to run a net on your computer, granted that you have 
+both numpy and Luparnet installed.
 ## Methods
 ```python
 ln.net(layer,ds,fuction="sigmoid")
