@@ -1,5 +1,5 @@
 # Luparnet
-  *Luparnaet* is a bare bones machine learning module that creates a simple class "net" 
+  *Luparnet* is a bare bones machine learning module that creates a simple class "net" 
 This new object is a neural network that can be trained on data. The purpose of this 
 system is to avoid having to use more complicated high level and complicated libraries
 and to serve as an education tool.
