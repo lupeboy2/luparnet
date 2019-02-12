@@ -35,11 +35,14 @@ print(myFirstNet.predict(np.array([[1]]),string=True))
 
 ## Methods
 ```python
-ln.net(layer,ds)
+ln.net(layer,ds,fuction="sigmoid")
 ```
 Constructs a neural network.
 *layer* is equal to the amount of layers in the network
 *ds* is an array and initializes the dimensions of the network.
+*function* is the activation function with the default function being the sigmoid
+function see the [Activation Function](#activation-functions) section for more
+information and for a list of the functions.
 
 ```python
 yourNet.train(run,indata,outdata,error=False)
@@ -97,12 +100,15 @@ The output dimensions are therefore
 ```[4,4,2]```
 
 ## Activation Functions
+The activation function defines the output of a given neuron or node within
+the network. 
 
 | Function      | String        | Range |
 |:-------------:|:-------------:|:-----:|
 | Sigmoid       | "sigmoid"     |  (0,1) |
 | Arc Tangent   | "arctan"      |  (−π/2,π/2) |
 | SoftPlus      | "softplus"    |  (0,∞) |
+
 
 
 
