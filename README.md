@@ -41,7 +41,7 @@ Constructs a neural network.
 *layer* is equal to the amount of layers in the network
 *ds* is an array and initializes the dimensions of the network.
 *function* is the activation function with the default function being the sigmoid
-function see the [Activation Function](#activation-functions) section for more
+function see the [Activation Functions](#activation-functions) section for more
 information and for a list of the functions.
 
 ```python
