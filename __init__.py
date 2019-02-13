@@ -1,1 +1,2 @@
-from luparnet import *
+from net import *
+from fit import *
