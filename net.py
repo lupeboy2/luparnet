@@ -6,23 +6,16 @@ np.warnings.filterwarnings('ignore')
 #
 class net():
     def __init__(self,layer,ds,function="sigmoid"):
-
         self.layers = layer
         self.d=ds
         self.func=function
-        #seed
-        np.random.seed(1)
         syn=[]
         c=0
         a=0
         b=1
-        temp=a
-        tempa=a
-        tempb=b
-        temp=a
         while c<self.layers-1:
             #synapses
-            syn.append(2*np.random.random((self.d[tempa],self.d[tempb])) - 1)
+            syn.append(2*np.random.random((self.d[a],self.d[b])) - 1)
             temp=a
             a=b
             b=temp
@@ -114,5 +107,3 @@ class net():
     print(predict(data))
     '''
     #    
-
-
